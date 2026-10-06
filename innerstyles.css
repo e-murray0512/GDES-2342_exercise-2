@@ -72,16 +72,16 @@ body {
                         text-align: right;
                     }
                 }
-                }
             }
         }
-
-        footer {
-            background-color: var(--footer-green);
-            color: white;
-            font-size: 11px;
-            text-align: center;
-            padding: 10px 0;
-            align-content: flex-end;
-        }
     }
+
+    footer {
+        background-color: var(--footer-green);
+        color: white;
+        font-size: 11px;
+        text-align: center;
+        padding: 10px 0;
+        align-content: flex-end;
+    }
+}
