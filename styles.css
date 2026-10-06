@@ -1,0 +1,157 @@
+:root {
+    --uofuRed: #C43733
+}
+
+body {
+    background-color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+
+    div.container {
+        width: 780px;
+        border: 1px dotted blue;
+        margin: 0 auto; /*tb rl*/
+        background-color: white;
+
+        section.middle {
+            padding: 0 20px;
+
+            background-image: url("HUMIS_assets_files/uofu_medallion_rt.gif");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+
+            > nav {
+                text-align: right;
+                font-size: 10px;
+
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    border-right: black solid 1px;
+                    margin-left: 3px;
+                    padding-right: 5px;
+
+                    &:hover { /* pseudoclass */
+                        text-decoration: underline;
+                    }
+
+                    &:last-of-type {
+                        border-right: none;
+                        padding-right: unset;
+                    }
+
+                }
+
+                img {
+                    vertical-align: middle;
+                }
+
+                &.top-nav {
+                    text-transform: uppercase;
+                }
+
+                &.bottom-nav {
+                    text-transform: lowercase;
+                }
+            }
+
+            section.brown-box {
+                /*height: 400px;*/
+                min-height: 400px;
+                background-color: #C8CAAF;
+                margin: 5px 0 50px;
+                padding: 10px 10px 10px 15px;
+
+                aside{
+                    border: 1px solid black;
+
+                    &.left{
+                        width: 30%;
+                        float: left;
+                        border: unset;
+
+
+                        nav {
+                            a {
+                                display: block;
+                                border-bottom: #585F2B solid 2px;
+                                padding: 10px 0 10px 10px;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                font-size: 10px;
+                                color: black;
+
+                                &:hover {
+                                    color: white;
+                                    background-color: #505A2F;
+                                }
+
+                                &:last-of-type {
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+
+                        div.links {
+                            margin: 50px auto 0;
+                            width: 153px;
+                        }
+                    }
+
+                    &.right{
+                        width: 60%;
+                        float: right;
+                        background-color: white;
+                        padding: 10px;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        h1 {
+                            border-bottom: var(--uofuRed) dashed 1px;
+                            color: #585F2B;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            font-weight: normal;
+                        }
+
+                        p {
+                            font-size: 10px;
+
+                            &.link {
+                                font-size: 10px;
+                                text-align: right;
+                                text-transform: uppercase;
+                                font-weight: normal;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: var(--uofuRed)
+                            }
+                        }
+
+
+                        /*h2 {*/
+                        /*    color: var(--uofuRed);*/
+                        /*    font-size: 10px;*/
+                        /*    text-align: right;*/
+                        /*    text-transform: uppercase;*/
+                        /*    font-weight: normal;*/
+                        /*}*/
+
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: #77793E;
+            color: white;
+            font-size: 11px;
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+}
