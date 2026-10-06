@@ -1,19 +1,83 @@
+:root {
+    --footer-green: #77793E;
+}
+
 body {
     background-color: #292827;
     display: flex;
     justify-content: center;
-}
+    font-family: Arial, Helvetica, sans-serif;
 
-section.container {
-    background-color: #fff;
-    width: 780px;
-    min-height: 600px;
-}
+    header {
+        border-bottom: 5px solid #8C8E5A;
+    }
 
-footer {
-    background-color: #77793E;
-    color: white;
-    font-size: 11px;
-    text-align: center;
-    padding: 10px 0;
-}
+
+    div.container {
+        background-color: #fff;
+        width: 780px;
+        min-height: 600px;
+
+        section.middle{
+            display: flex;
+
+            section {
+                &.left-side {
+                    width: 25%;
+                    background-color: #F5F6F6;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-right: 1px solid #C0C1A2;
+                    border-left: 1px solid #C0C1A2;
+
+                    nav {
+                        margin-top: 20px;
+
+                        a {
+                            display: block;
+                            border-bottom: #585F2B solid 2px;
+                            padding: 10px 10px 10px 10px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-size: 10px;
+                            color: black;
+
+                            &:hover {
+                                color: white;
+                                background-color: #505A2F;
+                            }
+
+                            &:last-of-type {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+
+                    div.links {
+                        margin: 50px auto 0;
+                        width: 153px;
+                    }
+                }
+
+                &.right-side {
+                    width: 70%;
+                    min-height: 600px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                }
+            }
+        }
+
+        footer {
+            background-color: var(--footer-green);
+            color: white;
+            font-size: 11px;
+            text-align: center;
+            padding: 10px 0;
+            align-content: flex-end;
+        }
+    }
