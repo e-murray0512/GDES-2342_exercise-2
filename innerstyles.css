@@ -1,0 +1,19 @@
+body {
+    background-color: #292827;
+    display: flex;
+    justify-content: center;
+}
+
+section.container {
+    background-color: #fff;
+    width: 780px;
+    min-height: 600px;
+}
+
+footer {
+    background-color: #77793E;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding: 10px 0;
+}
