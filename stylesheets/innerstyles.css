@@ -52,6 +52,12 @@ body {
                             font-size: 10px;
                             color: black;
 
+                            &.active {
+                                font-weight: bold;
+                                color: white;
+                                background-color: #505A2F;
+                            }
+
                             &:hover {
                                 color: white;
                                 background-color: #505A2F;
