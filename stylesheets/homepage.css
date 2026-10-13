@@ -6,6 +6,12 @@ body {
     background-color: #333333;
     font-family: Arial, Helvetica, sans-serif;
 
+    header {
+        > img {
+            display: block;
+        }
+    }
+
     div.container {
         width: 780px;
         margin: 0 auto; /*tb rl*/

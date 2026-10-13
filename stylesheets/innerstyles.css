@@ -8,6 +8,13 @@ body {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 
+    header {
+        img {
+            display: block;
+            vertical-align: top;
+        }
+    }
+
 
 
     div.container {
@@ -57,14 +64,13 @@ body {
                     }
 
                     div.links {
-                        margin: 50px auto 20px;
+                        margin-bottom: 2rem;
                         width: 153px;
                     }
                 }
 
                 &.right-side {
                     width: 72%;
-                    min-height: 600px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -97,25 +103,19 @@ body {
 
                         &.top-nav {
                             text-transform: uppercase;
+                            margin-top: 5px;
                         }
 
                         &.bottom-nav {
                             text-transform: lowercase;
+                            margin-bottom: 5px;
                         }
                     }
 
                     main {
                         padding-left: 40px;
-                        font-size: 14px;
-                        p {
-                            text-align: justify;
-                        }
+                        margin-bottom: 70px;
 
-                        h2 {
-                            font-size: 18px;
-                            text-transform: uppercase;
-                            color: #C43733;
-                        }
                         section.float-block{
                             margin-left: 30px;
                             float: right;
@@ -127,8 +127,8 @@ body {
                                 text-decoration: none;
                                 color: #c43733;
                                 text-transform: uppercase;
-                                font-size: 16px;
-                                padding-left: 28px;
+                                font-size: 14px;
+                                padding-left: 35px;
                                 &:hover {
                                     text-decoration: underline;
                                 }
