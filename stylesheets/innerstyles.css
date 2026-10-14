@@ -23,7 +23,9 @@ body {
         min-height: 600px;
 
         header {
-            border-bottom: 5px solid #8C8E5A;
+            img.last {
+                border-bottom: 5px solid #8C8E5A;
+            }
         }
 
         section.middle{
@@ -116,6 +118,7 @@ body {
                             text-transform: lowercase;
                             margin-bottom: 5px;
                         }
+
                     }
 
                     main {
@@ -140,6 +143,10 @@ body {
                                 }
                             }
 
+                        }
+
+                        nav {
+                            border-bottom: 2px solid black;
                         }
 
                     }
