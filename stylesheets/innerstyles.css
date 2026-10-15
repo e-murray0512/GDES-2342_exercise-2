@@ -146,20 +146,40 @@ body {
 
                         }
 
+                        section.middle-center{
+                            a{
+                                display: flex;
+                                flex-direction: column;
+                                text-decoration: none;
+                                color: black;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                                &.active {
+                                    font-weight: bold;
 
+                                }
+                                &.sub-link{
+                                    padding-left: 10px;
+
+                                }
+                            }
+                        }
                     }
+
+
                 }
             }
         }
-
-        footer {
-            background-color: var(--footer-green);
-            color: white;
-            font-size: 11px;
-            text-align: center;
-            padding: 10px 0;
-            align-content: flex-end;
-        }
     }
 
+    footer {
+        background-color: var(--footer-green);
+        color: white;
+        font-size: 11px;
+        text-align: center;
+        padding: 10px 0;
+        align-content: flex-end;
+    }
 }
+
