@@ -5,6 +5,39 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="stylesheets/innerstyles.css">
   <link rel="stylesheet" href="stylesheets/typography.css">
+
+  <style>
+    main {
+      nav.main-nav {
+        border-bottom: 2px solid black;
+        display: flex;
+        font-size: 11px;
+        padding-bottom: 3px;
+        gap: 2px;
+        color: var(--burgundy);
+        margin-top: 25px;
+
+
+        a {
+          font-size: 10px;
+          color: var(--burgundy);
+          text-decoration: none;
+          /*border-right: 1px solid var(--burgundy);*/
+          text-transform: uppercase;
+          padding-bottom: 3px;
+
+          &:last-of-type {
+            border-right: none;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+  </style>
 </head>
 <body>
 <div class="container">
@@ -33,7 +66,7 @@
 
     <section class="right-side">
 
-      <nav class="top-nav">
+      <nav class="secondary top-nav">
         <a href="#">Campus directory</a>
         <a href="#">Department calendar</a>
         <a href="#">Contact us</a>
@@ -44,11 +77,11 @@
 
       <main>
         <nav class="main-nav">
-          <h6>
-            <a href="#">Contact Information</a>
-            <a href="#">Faculty Directory</a>
-            <a href="#">Staff Directory</a>
-          </h6>
+          <a href="#">Contact Information</a>
+          |
+          <a href="#">Faculty Directory</a>
+          |
+          <a href="#">Staff Directory</a>
         </nav>
 
         <h2>Contact Information</h2>
@@ -86,7 +119,7 @@
 
       </main>
 
-      <nav class="bottom-nav">
+      <nav class="secondary bottom-nav">
         <a href="#">Disclaimer</a>
         <a href="#">Text only</a>
         <a href="#">Webmaster</a>
