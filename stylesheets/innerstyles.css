@@ -126,25 +126,6 @@ body {
                         margin-bottom: 70px;
                         min-height: 600px;
 
-                        section.float-block{
-                            margin-left: 30px;
-                            float: right;
-                            max-width: 200px;
-                            img {
-                                max-width: 200px;
-                            }
-                            a {
-                                text-decoration: none;
-                                color: #c43733;
-                                text-transform: uppercase;
-                                font-size: 14px;
-                                padding-left: 35px;
-                                &:hover {
-                                    text-decoration: underline;
-                                }
-                            }
-
-                        }
 
                         section.middle-center{
                             a{
