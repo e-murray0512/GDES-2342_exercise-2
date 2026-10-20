@@ -1,3 +1,8 @@
+@import 'images.css';
+@import 'typography.css';
+@import 'layouts.css';
+
+
 :root {
     --footer-green: #77793E;
 }
@@ -126,8 +131,8 @@ body {
                         margin-bottom: 70px;
                         min-height: 600px;
 
-
-                        section.middle-center{
+                        /* LEGACY STYLES */
+                        /*section.middle-center{
                             a{
                                 display: flex;
                                 flex-direction: column;
@@ -142,10 +147,11 @@ body {
                                 }
                                 &.sub-link{
                                     padding-left: 10px;
+                                    color: var(--burgundy);
 
                                 }
                             }
-                        }
+                        }*/
                     }
 
 
