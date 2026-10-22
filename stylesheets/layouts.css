@@ -1,20 +1,41 @@
 section.two-column-layout{
-    border: 3px dashed darkgray;
     display: flex;
     min-height: 100%;
     padding: 10px;
 
     aside{
-        border: 1px dotted red;
 
         &.left-column{
             width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            border-right: 2px dotted gray;
 
             p{
                 text-align: left;
+            }
+
+            div.top {
+                a {
+                    display: block;
+                    font-size: 0.6rem;
+                    margin-bottom: 0.25rem;
+                    color: black;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+
+                    &.active {
+                        font-weight: bold;
+                    }
+
+                    &.sub-link {
+                        padding-left: 15px;
+                        color: var(--burgundy);
+                    }
+                }
             }
 
             div.bottom{
@@ -24,14 +45,20 @@ section.two-column-layout{
                     span {
                         display: block;
 
-                        .name {
+                        &.name {
                             font-weight: bold;
                             font-size: 0.6rem;
+                        }
+
+                        &.title {
+                            font-weight: bold;
+                            font-style: italic;
                         }
                     }
                     a {
                         color: black;
                         text-decoration: none;
+                        display: block;
 
 
                         &:hover {
@@ -45,6 +72,13 @@ section.two-column-layout{
 
         &.right-column{
             width: 70%;
+            padding-left:15px;
+
+            h6 {
+                margin-bottom: 1.2rem;
+            }
+
+
         }
     }
 
